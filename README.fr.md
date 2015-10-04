@@ -5,24 +5,31 @@ A remote backup management written in python
 Creation nouveau client
 =======================
 
-installer btrfs-tools et rdidd-backup
+installer btrfs-tools et rdiff-backup
+
+    apt-get install btrfs-tools rdiff-backup
 
 Créer un dossier snapshots
-mkdir /snapshots/
+
+    mkdir /snapshots/
 
 generer une clé SSH pour root sur le client: root@client
-ssh-keygen 
+
+    ssh-keygen 
 
 generer un utilisateur sur le serveur
-ssh backup
-adduser backup_client
-CTRL-D
+
+    ssh backup
+    adduser backup_client
+    CTRL-D
 
 Copier la clé SSH de root sur le serveur
-ssh-copy-id backup_client@backup
+
+    ssh-copy-id backup_client@backup
 
 Corriger le nom d'utilisateur dans le script backup.py (et le home de destination !!)
 
 Generer un crontab
-0 1 * * * /root/backup_script/backup.py
+
+    0 1 * * * /root/backup_script/backup.py
 
