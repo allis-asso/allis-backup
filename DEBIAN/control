@@ -1,0 +1,10 @@
+Package: allis-backup
+Version: 15.001
+Section: base
+Priority: optional
+Architecture: all
+Depends: rdiff-backup, python3
+Suggests: btrfs-tools
+Maintainer: Sebastien DA ROCHA <seba@asso-allis.org>
+Description: Allis Backup management system
+
