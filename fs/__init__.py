@@ -1,3 +1,3 @@
 __all__ = [ "btrfs" ]
 
-from btrfs import btrfs
+from fs.btrfs import btrfs

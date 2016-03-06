@@ -1,3 +1,3 @@
 __all__ = [ "rdiff" ]
 
-from rdiff import rdiff
+from backend.rdiff import rdiff

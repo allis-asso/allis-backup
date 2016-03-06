@@ -1,4 +1,4 @@
-#! /usr/bin/pythonr3
+#! /usr/bin/python3
 from datetime import date
 from fs import btrfs
 from backend import rdiff
