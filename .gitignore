@@ -1,1 +1,3 @@
 **/*.pyc
+build/
+allis-backup.deb
